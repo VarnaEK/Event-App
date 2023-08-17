@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.nav-link{
+  color: white !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +25,361 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.main-div-cre-event{
+  background: rgb(195,34,34);
+background: linear-gradient(0deg, rgba(195,34,34,1) 0%, rgba(1,1,0,1) 93%);
+}
 .App-link {
   color: #61dafb;
 }
+body{
+  /* background-image: url(Images/background-img.png); */
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
 
+.link-div{
+  text-decoration:solid;
+  color: white;
+  /* text-shadow: 2px 3px 8px #000000; */
+  font-size: 15px;
+  font-weight: bold;
+}
+.drop-link{
+  color: white;
+}
+.main-banner{
+  background-image: url(https://mobirise.com/extensions/audiom4/assets/images/background32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 270px 0 210px 0;
+    position: relative;
+}
+.main-banner h2{
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 70px;
+    /* font-weight: 400; */
+   font-weight: 900;
+   text-align: left;
+}
+.container-home{
+  width: 50%;
+  text-align: center;
+  margin: 60px;
+  padding: 25px 0;
+}
+.add-div{
+  width: 30%;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 20px black;
+  padding: 28px;
+  /* background: rgb(251,214,63); */
+  /* background: radial-gradient(circle, rgba(251,214,63,1) 0%, rgba(255,255,255,1) 100%); */
+
+}
+.footer-distributed{
+  background: #000000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+}
+/* .home-div{
+  background-image: url(Images/background-img.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 90vh;
+  
+} */
+
+.invite-btn{
+  background-color: green;
+  border: 0px;
+  color: #000000;
+
+}
+
+.event-btn{
+  color: #000000;
+  background: rgb(251,214,63);
+  background: radial-gradient(circle, rgba(251,214,63,1) 0%, rgba(255,255,255,1) 100%);
+  width: 200px;
+  height: 70px;
+  border: 1px solid rgb(240, 202, 7);
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 70px;
+}
+/* .event-btn{
+  margin-top: 100px;
+  margin-left: 50px;
+} */
+.navbar{
+  /* box-shadow: 0 15px 20px black; */
+  background: black
+  /* background: radial-gradient(circle, rgba(251,214,63,1) 0%, rgba(255,255,255,1) 100%); */
+}
+/* .event-invite-div{
+  box-shadow: 0 15px 20px black;
+  background: rgb(251,214,63);
+  background: radial-gradient(circle, rgba(251,214,63,1) 0%, rgba(255,255,255,1) 100%);
+  /* width: 50%; */
+  /* padding: 15px; */
+  /* padding-top: 15px;
+  padding-left: 25px; */
+/* } */ */
+.styled-table{
+  box-shadow: 0 15px 20px black;
+  background: rgb(251,214,63);
+  background: radial-gradient(circle, rgba(251,214,63,1) 0%, rgba(255,255,255,1) 100%);
+}
+.div-invite-content{
+  margin-right: 70px;
+}
+.home-div2{
+  /* background-image: url("https://mobirise.com/extensions/audiom4/assets/images/background32.jpg"); */
+  width: 100vh;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100vh;
+  
+}
+.user-div{
+  width: 250px;
+  text-align: center;
+  
+  margin-top: 35px;
+  margin-left: 90px;
+  margin-right: 30px;
+}
+.user-div-card{
+  height: 300px;
+  background: rgb(251,214,63);
+  background: radial-gradient(circle, rgba(251,214,63,1) 0%, rgba(255,255,255,1) 100%);
+  color:white;
+  border: 0px solid transparent;
+  border-radius: 2px;
+}
+.nav-user-div{
+  background: rgb(158,13,13);
+  background: radial-gradient(circle, rgba(158,13,13,1) 0%, rgba(8,7,1,1) 78%);
+  height: 95vh;
+}
+.view-event-div{
+  background: rgb(158,13,13);
+  background: radial-gradient(circle, rgba(158,13,13,1) 0%, rgba(8,7,1,1) 78%);
+  height: 100vh;
+}
+.main-div2{
+  width: 250px;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 70px;
+  margin-right: 60px;
+}
+.main-card:hover{
+  background-color:rgb(0, 0, 0);
+  transition-duration: 0.3s;
+}
+.main-card text:hover{
+  background-color:rgb(246, 79, 1);
+  /* border-radius: 20px; */
+  transition-duration: 0.3s;
+  /* text-align: left; */
+}
+.main-card{
+  height: 300px;
+  width: 250px;
+  background-color: transparent;
+  color:white;
+  border: 0px solid transparent;
+  /* text-decoration: none; */
+  
+}
+.main-card title,a{
+  text-decoration: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
