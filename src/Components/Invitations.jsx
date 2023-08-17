@@ -9,9 +9,10 @@ import { samplecontext } from '../App'
 
 const Invitations = () => {
     const sample=useContext(samplecontext);
-    const{setshowhomenav}=sample;
+    const{setshowhomenav,setshowfooter}=sample;
     useEffect(() => {
         setshowhomenav(false)
+        setshowfooter(false)
     }, [])
     const [acceptindex, setacceptindex] = useState()
     const [request, setrequest] = useState([
@@ -57,10 +58,10 @@ const Invitations = () => {
         toast.error(`Invitation Rejected `);
     }
   return (
-    
+    <div className='reg-div'>
     <div className='text-center aligh-items-center w-50 m-auto '>
         
-        <h1 className='text-center fw-1 mt-5'>Pending Invitations <VscBellDot style={{color:'red',fontSize:'2.3rem'}}/></h1>
+        <h1 className='text-center fw-1 pt-5'>Pending Invitations <VscBellDot style={{color:'red',fontSize:'2.3rem'}}/></h1>
         <div className='text-center aligh-items-center m-auto event-invite-div'>
                 <Table className='styled-table'>
                     <tbody>
@@ -85,12 +86,10 @@ const Invitations = () => {
                     </tbody>
                 </Table>
               </div>
-                
-            {/* )
-        })} */}
+          
         </div>
         
-    // </div>
+    </div>
   )
 }
 

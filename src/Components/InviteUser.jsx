@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Button, Card} from 'react-bootstrap'
 import { toast } from 'react-toastify'
+import { samplecontext } from '../App'
 
 const InviteUser = () => {
   const [user, setruser] = useState([
@@ -14,19 +15,25 @@ const InviteUser = () => {
 ]
 )
 const [invite, setinvite] = useState(true)
+const sample=useContext(samplecontext);
+    const{setshowhomenav,setshowfooter}=sample;
+    useEffect(() => {
+        setshowhomenav(false)
+        setshowfooter(false)
+    }, [])
 const handleInvite = () =>{
   setinvite(false)
   toast.success("request send")
 }
   return (
-    <div>
-      <h2 className='text-center pt-5 pb-5'>Send Request</h2>
+    <div className='reg-div'>
+      <h2 className='text-center pt-5 pb-5 fw-bold fs-1'>Invite Your Friends</h2>
     <div className='row'>
       {user.map((i)=>{
         return(
           <div className='user-div'>
           <Card  className='user-div-card' style={{ width: '10rem' }}>
-              <Card.Img variant="top" src={i.profilepic} />
+              <Card.Img variant="top" src={i.profilepic} style={{borderRadius:'50%'}}/>
               <Card.Body>
                   <Card.Title>{i.user}</Card.Title>
                   {/* <Card.Text>

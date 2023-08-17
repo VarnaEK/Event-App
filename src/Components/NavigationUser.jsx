@@ -59,7 +59,15 @@ const NavigationUser = () => {
         </Navbar>
     </div>
     <div className='nav-user-div'>
-        {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT905pYr4ntcJippPGqDscDtu5TapUYCkD4rQ&usqp=CAU" alt=""  style={{width:'300px',borderRadius:'50%'}}/> */}
+        <div className='main-banner1 d-flex'>
+            <div className=''>
+                <h2>Life Is An Event </h2>
+                <h2>Make It Memorable</h2>
+            </div>
+            <div className='pt-5 ps-4'>
+                <img src="https://www.adobe.com/content/dam/www/us/en/events/overview-page/eventshub_evergreen_opengraph_1200x630_2x.jpg" alt="" style={{height:'300px',width:'500px',borderRadius:'8px'}}/>
+            </div>
+        </div>
     </div>
     </div>
   )

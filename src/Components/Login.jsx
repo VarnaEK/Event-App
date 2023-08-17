@@ -28,6 +28,7 @@ const Login = () => {
         toast.success("Login Successfully")
     }
   return (
+    <div className='reg-div'>
     <div className='vh-100 container-fluid h-custom'>
         <div className='row d-flex justify-content-center align-items-center h-100'>
             <div className='col-md-9 col-lg-6 col-xl-5'>
@@ -75,7 +76,7 @@ const Login = () => {
                 </Form>
             </div>
         </div>
-    
+        </div>
     </div>
   )
 }

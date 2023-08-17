@@ -17,16 +17,14 @@ const NavigationHome = () => {
                 width="75"
                 height="75"
                 className="d-inline-block align-top"
-                
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className=" ms-auto text-secondary">
-                
-                {/* <Nav.Link className='nav-li' href="#home" >
-                  <Link className="link-div text-dark fs-4 " to={"/Home"}>Home</Link> 
-                </Nav.Link> */}
+            <Nav className=" ms-auto text-secondary"> 
+                <Nav.Link className='nav-li' href="#home" >
+                  <Link className="link-div text-light fs-4 " to={"/"}>Home</Link> 
+                </Nav.Link>
                 <Nav.Link className='nav-li' href="#home" >
                   <Link className="link-div text-light fs-4 " to={"/userReg"}>Register</Link> 
                 </Nav.Link>
